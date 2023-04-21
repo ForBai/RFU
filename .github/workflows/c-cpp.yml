@@ -24,7 +24,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.3
 
     - name: Build Solution
-      run: msbuild "-p:Configuration=${{ matrix.configuration }};Platform=${{ matrix.platform }}" rbxfpsunlocker.sln
+      run: msbuild "-p:Configuration=${{ matrix.configuration }};Platform=${{ matrix.platform }}" RFU.sln
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
