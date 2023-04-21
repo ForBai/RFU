@@ -310,6 +310,9 @@ struct RobloxProcess
 		{
 			const char* error = nullptr;
 			ts_ptr = FindTaskScheduler(handle, &error);
+			if (error)
+    				std::cout << "Error: " << error << std::endl;
+
 
 			if (!ts_ptr)
 			{
